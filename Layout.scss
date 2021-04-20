@@ -1,0 +1,80 @@
+$blue: #2E4765 ;
+$black: #172433;
+$white: #FFFFFF;
+$green: #93EF00;
+$orange:#f0570f;
+
+.Logo{
+
+    color: $orange;
+
+}
+
+
+.profileImage{
+
+    border-radius: 25px;
+    margin: 10px;
+
+}
+
+.myList{
+
+    list-style-type: none;
+    display:inline-flex;
+    margin-top: 25px;
+
+    li{
+
+        margin: 0 20px;
+
+    }
+
+}
+
+
+.headerContainer{
+
+    background-image: url(Images/10882.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+
+    h1{
+
+        color: $white;
+
+    }
+
+}
+
+.iconBox{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange;
+    padding: 10px 10px;
+    margin: 5px 10px;
+    border-radius: 15px;
+    width: 125px;
+    margin: 10px;
+    
+    i{
+
+        font-size: 2.5rem;
+        color: $white;
+
+    }
+
+    p{
+
+        align-items: center;
+        margin: 2.5px;
+        color: $white;
+
+    }
+
+}
