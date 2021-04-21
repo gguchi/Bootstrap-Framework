@@ -1,5 +1,9 @@
+.navContainer {
+  border-bottom: 1px solid #817575;
+}
+
 .Logo {
-  color: #f0570f;
+  color: #B30733;
 }
 
 .profileImage {
@@ -19,16 +23,8 @@
   margin: 0 20px;
 }
 
-.headerContainer {
-  background-image: url(Images/10882.png);
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0;
-  height: 500px;
-}
-
-.headerContainer h1 {
-  color: #FFFFFF;
+.imageBox {
+  border-right: 2px solid #817575;
 }
 
 .iconBox {
@@ -45,17 +41,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f0570f;
-  padding: 10px 10px;
-  margin: 5px 10px;
+  background-color: #EF4C00;
+  margin: 10px 10px;
   border-radius: 15px;
   width: 125px;
-  margin: 10px;
 }
 
 .iconBox i {
   font-size: 2.5rem;
   color: #FFFFFF;
+  padding: 5px;
 }
 
 .iconBox p {
@@ -64,5 +59,141 @@
           align-items: center;
   margin: 2.5px;
   color: #FFFFFF;
+}
+
+.bannerBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bannerBox_Banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.bannerBox_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 25px;
+  color: #EF4C00;
+  font-weight: bold;
+}
+
+.headerContainer {
+  background-image: url(Images/10882.png);
+  background-repeat: no-repeat;
+  height: 400px;
+  border-radius: 25px 25px 25px 25px;
+  padding: 50px;
+  background-size: cover;
+}
+
+.headerContainer_Banner {
+  font-size: 40px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 350px;
+}
+
+.mealContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #B30733;
+  padding: 10px;
+  padding-bottom: 30px;
+}
+
+.mealContainer .mySearch {
+  border-radius: 20px;
+}
+
+.mealContainer .buttonBox {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #EF4C00;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  padding: 2px 0px 0px 9px;
+}
+
+.mealContainer .buttonBox i {
+  color: #FFFFFF;
+  font-size: 20px;
+}
+
+.optionBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.optionBox .menuList {
+  list-style-type: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 30px;
+}
+
+.optionBox .menuList li {
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+  height: 40px;
+  margin-right: 20px;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  background-color: #817575;
+  border-radius: 30px;
+}
+
+.optionBox .menuList .list--first {
+  background-color: #EF4C00;
+}
+
+.dish {
+  border: 1px solid #817575;
+  border-radius: 40px;
+  height: 250px;
+}
+
+.dish .dishImage--1 {
+  margin-top: -2px;
+  margin-right: -1px;
+  padding: 0px;
+  height: 150px;
+  border-radius: 40px 40px 0 0;
+  background-image: url(Images/Image33.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dish .dishBody {
+  padding-left: 15px;
 }
 /*# sourceMappingURL=Layout.css.map */

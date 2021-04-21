@@ -2,11 +2,19 @@ $blue: #2E4765 ;
 $black: #172433;
 $white: #FFFFFF;
 $green: #93EF00;
-$orange:#f0570f;
+$orange:#EF4C00;
+$marron: #B30733;
+$gray: rgb(129, 117, 117);
+
+.navContainer{
+
+    border-bottom: 1px solid $gray ;
+
+}
 
 .Logo{
 
-    color: $orange;
+    color: $marron;
 
 }
 
@@ -32,20 +40,9 @@ $orange:#f0570f;
 
 }
 
+.imageBox{
 
-.headerContainer{
-
-    background-image: url(Images/10882.png);
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    height: 500px;
-
-    h1{
-
-        color: $white;
-
-    }
+    border-right: 2px solid $gray;
 
 }
 
@@ -56,16 +53,15 @@ $orange:#f0570f;
     justify-content: center;
     align-items: center;
     background-color: $orange;
-    padding: 10px 10px;
-    margin: 5px 10px;
+    margin: 10px 10px;
     border-radius: 15px;
     width: 125px;
-    margin: 10px;
     
     i{
 
         font-size: 2.5rem;
         color: $white;
+        padding: 5px;
 
     }
 
@@ -77,4 +73,144 @@ $orange:#f0570f;
 
     }
 
+}
+
+.bannerBox{
+    
+    display: flex;
+    justify-content: center;
+
+    &_Banner{
+
+        display: flex;
+        margin: 50px;
+        flex-basis: 100%;
+
+    }
+
+    &_line{
+
+        display: flex;
+        justify-content: flex-end;
+        font-size: 25px;
+        color: $orange;
+        font-weight: bold;
+
+    }
+
+}
+
+
+.headerContainer{
+
+    background-image: url(Images/10882.png);
+    background-repeat: no-repeat;
+    height: 400px;
+    border-radius: 25px 25px 25px 25px;
+    padding: 50px;
+    background-size: cover;
+
+    &_Banner{
+
+        font-size: 40px;
+        color: $white;
+        padding: 20px;
+        width: 350px;
+
+    }
+
+}
+
+.mealContainer{
+
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: $marron;
+    padding: 10px;
+    padding-bottom: 30px;
+    
+        .mySearch{
+
+            border-radius: 20px;
+            
+        }
+
+    .buttonBox{
+
+        justify-content: flex-end;
+        background-color: $orange;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        padding: 2px 0px 0px 9px;
+
+            i{
+
+                color: $white;
+                font-size: 20px;
+
+            }
+    }
+}
+
+.optionBox{
+
+    display: flex;
+
+    .menuList{
+
+        list-style-type: none;
+        display:inline-flex;
+        margin-bottom: 30px;
+
+        li{
+
+            color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 140px;
+            height: 40px;
+            margin-right: 20px;
+            flex-basis: 25%;
+            background-color: $gray;
+            border-radius: 30px;
+            
+        }
+        
+        .list--first{
+
+            background-color: $orange;
+
+        }
+    
+    }
+    
+}
+
+.dish{
+
+    border: 1px solid $gray;
+    border-radius: 40px;
+    height: 250px;
+
+    .dishImage--1{
+
+        margin-top: -2px;
+        margin-right: -1px;
+        padding: 0px;
+        height: 150px;
+        border-radius: 40px 40px 0 0;
+        background-image: url(Images/Image33.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+            
+    }
+
+    .dishBody{
+
+        padding-left:15px;
+
+    }
 }
