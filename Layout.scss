@@ -119,6 +119,59 @@ $gray: rgb(129, 117, 117);
 
     }
 
+    .downloadBox{
+
+        display: flex;
+        flex-basis: 100%;
+        width: 200px;
+        height: 70px;
+        background-color: $marron;
+        border-radius: 10px;
+        flex-direction: column;
+        
+        .image1{
+
+            margin: 0 0 0 10px;
+            height: 50px;
+            width: 50px;
+            color: $white;
+            font-size: 50px;
+            flex-basis: 20%;
+        }
+
+        .image2{
+
+            margin: 0 0 0 10px;
+            height: 50px;
+            width: 50px;
+            color: $white;
+            font-size: 50px;
+            flex-basis: 20%;
+            padding-right: 20px;
+
+        }
+
+        .textBox{
+
+            display: flex;
+            flex-direction: column;
+            flex-basis: 80%;
+            align-self: center;
+            margin-top: -40px;
+            margin-left: 40px;
+            color: $white;
+
+            h4{
+
+                margin-top: -10px;
+                font-size: 25px;
+                
+            }
+        }
+
+    
+    }
+
 }
 
 .mealContainer{
@@ -129,6 +182,7 @@ $gray: rgb(129, 117, 117);
     color: $marron;
     padding: 10px;
     padding-bottom: 30px;
+    margin-top: 15px;
     
         .mySearch{
 
@@ -152,8 +206,17 @@ $gray: rgb(129, 117, 117);
 
             }
     }
+
+    
 }
 
+.mealTag{
+
+    font-size: 25px;
+    font-weight: bold;
+    color: $marron;
+
+}
 .optionBox{
 
     display: flex;
@@ -166,7 +229,6 @@ $gray: rgb(129, 117, 117);
 
         li{
 
-            color: $white;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -174,14 +236,22 @@ $gray: rgb(129, 117, 117);
             height: 40px;
             margin-right: 20px;
             flex-basis: 25%;
-            background-color: $gray;
+            background-color: lightgray;
             border-radius: 30px;
             
         }
         
         .list--first{
 
+            color: $white;
             background-color: $orange;
+
+        }
+
+        .menuIcons{
+
+            width: 25px;
+            height: 25px;
 
         }
     
@@ -191,8 +261,8 @@ $gray: rgb(129, 117, 117);
 
 .dish{
 
-    border: 1px solid $gray;
-    border-radius: 40px;
+    border: 1px solid lightgray;
+    border-radius: 20px;
     height: 250px;
 
     .dishImage--1{
@@ -201,16 +271,166 @@ $gray: rgb(129, 117, 117);
         margin-right: -1px;
         padding: 0px;
         height: 150px;
-        border-radius: 40px 40px 0 0;
+        border-radius: 20px 20px 0 0;
         background-image: url(Images/Image33.png);
         background-repeat: no-repeat;
         background-size: cover;
             
     }
 
+    .dishImage--2{
+
+        margin-top: -2px;
+        margin-right: -1px;
+        padding: 0px;
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+        background-image: url(Images/Image34.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .dishImage--3{
+
+        margin-top: -2px;
+        margin-right: -1px;
+        padding: 0px;
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+        background-image: url(Images/Image35.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .dishImage--4{
+
+        margin-top: -2px;
+        margin-right: -1px;
+        padding: 0px;
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+        background-image: url(Images/Image36.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .dishImage--5{
+
+        margin-top: -2px;
+        margin-right: -1px;
+        padding: 0px;
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+        background-image: url(Images/Image37.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .dishImage--6{
+
+        margin-top: -2px;
+        margin-right: -1px;
+        padding: 0px;
+        height: 150px;
+        border-radius: 20px 20px 0 0;
+        background-image: url(Images/Image38.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
     .dishBody{
 
-        padding-left:15px;
+        display: flex;
+        padding: 0px 15px 0px 15px;
+
+    }
+
+    i{
+
+        display: flex;
+        flex-basis: 40%;
+        justify-content: flex-end;
+        margin-top: 8px;
+        color: $marron;
+        font-size: 20px;
+
+    }
+
+    .dishName{
+        display: flex;
+        width: 60%;
 
     }
 }
+
+.reviewBox{
+
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    flex-basis: 100%;
+    color: $marron;
+    padding: 0 15px 0 15px;
+    height: 5px;
+
+    i{
+        font-size: 10px;
+        flex-basis: 4%;
+        color: $orange;
+    }
+
+    p{
+        margin: 10px 0 0 15px;
+        display: flex;
+        flex-basis: 50%;
+        border-radius: 5px;
+
+    }
+
+
+}
+
+.categoryBox{
+
+    display: flex;
+    flex-basis: 100%;
+    padding: 0 15px 0 15px;
+    margin-top: 25px;
+
+        .dishCategory{
+
+            padding: inherit;
+            background-color: lightgray;
+            border-radius: 20px;
+            margin-left: 5px;
+        
+        }
+
+        .timeBox{
+
+            display: flex;
+            flex-basis: 45%;
+            align-items: center;
+            justify-content: flex-end;
+            height: 20px;
+            margin: 0px;
+
+            i{
+
+                font-size: 20px;
+                margin: -5px;
+            }
+            p{
+
+                margin: 3px 0 0 10px;
+
+            }
+
+        }
+
+}
+
