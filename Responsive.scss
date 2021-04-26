@@ -1,0 +1,160 @@
+$blue: #2E4765 ;
+$black: #172433;
+$white: #FFFFFF;
+$green: #93EF00;
+$orange:#EF4C00;
+$marron: #B30733;
+$gray: rgb(129, 117, 117);
+
+@media (max-width: 320px){
+ 
+    h2.Logo{
+ 
+        color: #B30733;
+        justify-content: center;
+        display: flex;
+
+    }
+
+
+    .testClass{
+
+        margin: 0px;
+        justify-content: center;
+
+        .myList{
+
+            list-style-type: none;
+            display: flex;
+            margin-top: 25px;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px;
+    
+        }
+            
+    }
+
+    .resBox{
+
+        display: flex;
+
+    }
+
+    .newImgBox{
+
+        display: flex;
+        flex-basis: 45%;
+
+        .imageBox{
+
+            border-right: none;
+
+        }
+    }
+
+    .newIcnBox{
+
+        display: flex;
+        flex-basis: 45%;
+
+    }
+
+    .bannerBox_Banner{
+
+        font-size: 30px;
+
+    }
+
+    .bannerBox_line{
+
+        justify-content: center;
+        margin-top: -40px;
+
+    }
+
+    .headerContainer{
+
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        padding: 0px;
+        border-radius: 0px;
+        justify-content: center;
+
+        .headerContainer_Banner{
+
+            display: flex;
+            padding: 10px;
+
+            p{
+
+                display: flex;
+                font-size: auto;
+                word-wrap:normal;
+    
+            }
+
+        }
+
+        .downloadBox{
+
+            margin: 10px 0 0 10px;   
+
+        }
+
+    }
+
+    .mealTag{
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+.mealContainer{
+
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    
+    .newSearch{
+
+        display:flex;
+        flex-basis: 40%;
+        padding: 0px;
+
+    }
+        .searchContainer{
+
+            display: flex;
+            width: 150px;
+            flex-basis: 40%;
+            
+
+            #searchBox{
+            
+                display: flex;
+                width: 150px;
+    
+            }
+
+        }
+
+        .buttonBox{
+
+            flex-basis: 40%;
+
+        }
+
+
+}
+
+.optionBox{
+
+    overflow-wrap: normal;
+
+}
+
+}
