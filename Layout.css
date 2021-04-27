@@ -167,9 +167,9 @@
 }
 
 .mealContainer {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 25px;
   font-weight: bold;
   color: #B30733;
@@ -178,7 +178,7 @@
   margin-top: 15px;
 }
 
-.mealContainer .mySearch {
+.mealContainer .searchContainer .mySearch {
   border-radius: 20px;
 }
 
@@ -191,6 +191,7 @@
   height: 40px;
   border-radius: 30px;
   padding: 2px 0px 0px 9px;
+  margin-left: 270px;
 }
 
 .mealContainer .buttonBox i {
@@ -326,18 +327,84 @@
   padding: 0px 15px 0px 15px;
 }
 
-.dish i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-top: 8px;
+.dish .star {
+  margin: 0 0 0 5px;
+  position: relative;
+  display: block;
   color: #B30733;
-  font-size: 20px;
+  width: 0px;
+  height: 0px;
+  border-right: 8px solid transparent;
+  border-bottom: 5px solid #B30733;
+  border-left: 8px solid transparent;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+
+.dish .star:before {
+  border-bottom: 5px solid #B30733;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -3px;
+  left: -4px;
+  display: block;
+  content: '';
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.dish .star:after {
+  position: absolute;
+  display: block;
+  color: #B30733;
+  top: 0px;
+  left: -8px;
+  width: 0px;
+  height: 0px;
+  border-right: 8px solid transparent;
+  border-bottom: 5px solid #B30733;
+  border-left: 8px solid transparent;
+  -webkit-transform: rotate(-67deg);
+          transform: rotate(-67deg);
+  content: '';
+}
+
+.dish .star:nth-child(5) {
+  opacity: .5;
+}
+
+.dish .heart {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 10px 0 0 90px;
+}
+
+.dish .heart:before,
+.dish .heart:after {
+  position: absolute;
+  content: "";
+  left: 15px;
+  top: 0;
+  width: 15px;
+  height: 25px;
+  background: #B30733;
+  border-radius: 50px 50px 0 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+}
+
+.dish .heart:after {
+  left: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 100% 100%;
+          transform-origin: 100% 100%;
 }
 
 .dish .dishName {

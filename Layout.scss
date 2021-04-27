@@ -176,7 +176,7 @@ $gray: rgb(129, 117, 117);
 
 .mealContainer{
 
-    justify-content: center;
+    display: flex;
     font-size: 25px;
     font-weight: bold;
     color: $marron;
@@ -184,11 +184,14 @@ $gray: rgb(129, 117, 117);
     padding-bottom: 30px;
     margin-top: 15px;
     
+    .searchContainer{
+        
         .mySearch{
 
             border-radius: 20px;
             
         }
+    }
 
     .buttonBox{
 
@@ -198,6 +201,7 @@ $gray: rgb(129, 117, 117);
         height: 40px;
         border-radius: 30px;
         padding: 2px 0px 0px 9px;
+        margin-left: 270px;
 
             i{
 
@@ -349,16 +353,82 @@ $gray: rgb(129, 117, 117);
 
     }
 
-    i{
-
-        display: flex;
-        flex-basis: 40%;
-        justify-content: flex-end;
-        margin-top: 8px;
+    .star {
+        margin: 0 0 0 5px;
+        position: relative;
+        display: block;
         color: $marron;
-        font-size: 20px;
+        width: 0px;
+        height: 0px;
+        border-right: 8px solid transparent;
+        border-bottom: 5px solid $marron;
+        border-left: 8px solid transparent;
+        transform: rotate(35deg);
+      }
+      .star:before {
+        border-bottom: 5px solid $marron;
+        border-left: 2px solid transparent;
+        border-right: 2px solid transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -3px;
+        left: -4px;
+        display: block;
+        content: '';
+        transform: rotate(-35deg);
+      }
+      .star:after {
+        position: absolute;
+        display: block;
+        color: $marron;
+        top: 0px;
+        left: -8px;
+        width: 0px;
+        height: 0px;
+        border-right: 8px solid transparent;
+        border-bottom: 5px solid $marron;
+        border-left: 8px solid transparent;
+        transform: rotate(-67deg);
+        content: '';
+        
+    } 
+
+    .star:nth-child(5){
+
+        opacity: .5;
 
     }
+
+      
+    
+
+    .heart {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin: 10px 0 0 90px;
+        }
+        .heart:before,
+        .heart:after {
+        position: absolute;
+        content: "";
+        left: 15px;
+        top: 0;
+        width: 15px;
+        height: 25px;
+        background: $marron;
+        border-radius: 50px 50px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        }
+        .heart:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+        }
+        
+    
 
     .dishName{
         display: flex;
